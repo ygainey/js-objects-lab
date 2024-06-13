@@ -32,11 +32,11 @@ const character = [
 
 console.log(character[0].name)
 
-/* doesn't work
+
 character.forEach(element => {
-    console.log(`I am ${character.name} from the move ${character.movie}`)
+    console.log(`I am ${element.name} from the move ${element.movie}`)
 });
-*/
+
 
 for(let char of character){
     console.log(`I am ${char.name} from the movie ${char.movie}`) 
@@ -54,7 +54,7 @@ const monkey = {
         this.foodsEaten.push(food);
     },
     introduce(){
-        console.log(`Hello my name is ${this.name} I am a ${this.species} which is a type of Monkey. The last thing I was was a ${this.foodsEaten[this.foodsEaten.length-1]}.`)
+        return `Hello my name is ${this.name} I am a ${this.species} which is a type of Monkey. The last thing I was was a ${this.foodsEaten[this.foodsEaten.length-1]}.`
     },
 }
 
